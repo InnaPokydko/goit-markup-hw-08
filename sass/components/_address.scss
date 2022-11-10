@@ -1,0 +1,36 @@
+.address {
+    margin-top: 20px;
+  }
+  
+  .address__item:not(:first-child) {
+    margin-top: 9px;
+  }
+  
+  .address__link {
+    color: var(--primary-background-color);
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    text-decoration: none;
+  }
+  
+  .address__feedback {
+    color: var(--footer-text-color);
+    font-style: normal;
+    text-decoration: none;
+  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .address__emeil:hover,
+  .address__tel:hover {
+    color: var(--accent-color);
+  }
+  
+  .address__emeil:focus,
+  .address__tel:focus {
+    color: var(--accent-color);
+  }
+  

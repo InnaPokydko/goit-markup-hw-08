@@ -1,0 +1,31 @@
+.networks__list {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+  }
+  
+  .networks__link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--primary-background-color);
+    color: var(--net-color);
+  
+    transition: color, background-color  250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
+  }
+}
+  
+  .networks__icon {
+    fill: currentColor;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  

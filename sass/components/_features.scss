@@ -1,0 +1,30 @@
+.features {
+    display: flex;
+  }
+  
+  .features__cards {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--section-background-color);
+    margin-bottom: 30px;
+  }
+  
+  .features__item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 30px;
+    min-width: 270px;
+  }
+  
+  .feature__title {
+    color: var(--title-text-color);
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }

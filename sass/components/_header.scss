@@ -1,0 +1,19 @@
+.header {
+    background-color: var(--primary-background-color);
+    border-bottom: 1px solid var(--border-bottom);
+  }
+  
+  .header__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+
+  .header__logo {
+    margin-right: 93px;
+  }
+  
+  .header__studio {
+    color: var(--secondary-text-color);
+  }

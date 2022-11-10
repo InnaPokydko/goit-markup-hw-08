@@ -1,0 +1,22 @@
+.net__title {
+    color: var(--primary-background-color);
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16.41 / 14);
+  }
+  
+  .net__list {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    }
+
+  .networks__link--color {
+    background-color: var(--net-background-color);
+    color: var(--primary-background-color);
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
