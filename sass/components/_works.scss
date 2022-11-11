@@ -1,5 +1,9 @@
 .works {
     padding-top: 0;
+  
+    @media (max-width: 768px) {
+      display: none;
+  }
   }
   
   .works__list {

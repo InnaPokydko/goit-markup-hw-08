@@ -1,19 +1,39 @@
 .header {
     background-color: var(--primary-background-color);
     border-bottom: 1px solid var(--border-bottom);
-  }
   
-  .header__box {
+  
+  &__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
-  }
 
-  .header__logo {
+    @media (min-width: 480px) {
+      width: 480px;
+  } 
+
+  @media (min-width: 768px) {
+    width: 768px;
+}
+
+@media (min-width: 1200px) {
+  width: 1200px;
+  }
+}
+
+  &__logo {
     margin-right: 93px;
   }
   
-  .header__studio {
+  &__studio {
     color: var(--secondary-text-color);
   }
+
+  &__burger-menu {
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+}

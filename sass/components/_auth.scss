@@ -1,11 +1,14 @@
 .auth {
-    display: flex;
+    display: none;
     margin-left: auto;
     gap: 50px;
+
+    @media (min-width: 768px) {
+      display: flex;
   }
-  
-  .auth__emeil,
-  .auth__tel {
+    
+  &__emeil,
+  &__tel {
     display: flex;
     align-items: center;
     color: var(--primary-text-color);
@@ -13,8 +16,9 @@
     padding: 32px 0;
   }
   
-  .auth__iconemeil,
-  .auth__icontel {
+  &__iconemeil,
+  &__icontel {
     margin-right: 10px;
     fill: currentColor;
   }
+}
