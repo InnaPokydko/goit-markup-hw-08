@@ -24,6 +24,11 @@
           <a href="./index.html" class="logo header__logo" lang="en"
             >Web<span class="header__studio">Studio</span></a
           >
+          <button class="menu-toggle js-close-menu">
+            <svg width="18px" height="18px">
+              <use href="./images/icons.svg#icon-menu_40px"></use>
+            </svg>
+          </button>
           <ul class="nav__links list">
             <li>
               <a href="./index.html" class="nav__item link current">Студія</a>
@@ -574,12 +579,11 @@
         </form>
       </div>
     </div>
-    
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg width="18px" height="18px">
+
+    <div class="mobile-menu js-menu-container">
+      <button class="close-button js-close-menu">
+        <svg width="40px" height="40px">
           <use href="./images/icons.svg#icon-close-black"></use>
-          <use href="./images/icons.svg#icon-menu"></use>
         </svg>
       </button>
 
@@ -593,7 +597,7 @@
         <li>
           <a href="#" class="nav__item link">Контакти</a>
         </li>
-         </ul>
+      </ul>
     </div>
     <script src="./js/modal.js"></script>
     <script src="js/mobile-menu.js"></script>
