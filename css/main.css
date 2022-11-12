@@ -1094,10 +1094,11 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: var(--primary-background-color);
+  fill: var(--title-text-color);
   border: none;
   outline: none;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 @media (min-width: 768px) {
