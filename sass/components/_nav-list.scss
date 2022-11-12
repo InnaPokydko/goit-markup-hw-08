@@ -6,8 +6,23 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+          
+    &__burger-menu {
+      height: 40px;
+    width: 40px;
+      
+    margin-left: auto;
+    padding: 0;
+    background-color: var(--primary-background-color);
+    cursor: pointer;
+    border: none;
+      outline: none;
   
-  
+      @media (min-width: 768px) {
+          display: none;
+      }
+    }
+
   &__links {
     display: none;
     margin-left: 0;

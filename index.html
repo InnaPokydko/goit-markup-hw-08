@@ -20,17 +20,19 @@
   <body class="body">
     <header class="header">
       <div class="container header__box">
-        <nav class="nav">
+                <nav class="nav">
           <a href="./index.html" class="logo header__logo" lang="en"
             >Web<span class="header__studio">Studio</span></a
           >
-          <button class="header__burger-menu js-open-menu"
+          <button
+          class="nav__burger-menu js-open-menu"
           aria-expanded="false"
-          aria-controls="mobile-menu">
-            <svg width="40px" height="40px">
-              <use href="./images/icons.svg#icon-menu_40px"></use>
-            </svg>
-          </button>
+          aria-controls="mobile-menu"
+        >
+          <svg width="40px" height="40px">
+            <use href="./images/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
           <ul class="nav__links list">
             <li>
               <a href="./index.html" class="nav__item link current">Студія</a>
@@ -509,21 +511,19 @@
         </svg>
       </button>
       <div class="navigation">
-      <ul class="mobile-menu list">
-        <li>
-          <a href="./index.html" class="nav__item link">Студія</a>
-        </li>
-        <li>
-          <a href="./portfolio.html" class="nav__item link">Портфоліо</a>
-        </li>
-        <li>
-          <a href="#" class="nav__item link">Контакти</a>
-        </li>
-      </ul>
-    </div>
-    <div class="contacts">
-
-    </div>
+        <ul class="mobile-menu list">
+          <li>
+            <a href="./index.html" class="nav__item link">Студія</a>
+          </li>
+          <li>
+            <a href="./portfolio.html" class="nav__item link">Портфоліо</a>
+          </li>
+          <li>
+            <a href="#" class="nav__item link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contacts"></div>
     </div>
 
     <div class="backdrop is-hidden" data-modal>

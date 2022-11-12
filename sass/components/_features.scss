@@ -1,23 +1,39 @@
 .features {
-    display: flex;
+    
+    @media (min-width: 768px) {
+      display: flex;
   }
   
-  .features__cards {
-    width: 270px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__cards {
     background-color: var(--section-background-color);
+    width: 100%;
     margin-bottom: 30px;
+   
+
+    @media (min-width: 1200) {
+      width: 50%;
+      
+      display: flex;
+      justify-content: center;
+      align-items: center;
+           
   }
+    @media (min-width: 1200) {
+      width: 270px;
+      height: 120px;
+       
+  }
+     }
   
   .features__item {
+
+    @media (min-width: 1200) {
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 30px;
     min-width: 270px;
   }
+}
   
   .feature__title {
     color: var(--title-text-color);
@@ -28,3 +44,4 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
+}
