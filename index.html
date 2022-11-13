@@ -505,25 +505,49 @@
     </footer>
 
     <div class="mobile js-menu-container" id="mobile-menu">
+      <div class="mobile-menu">
       <button class="mobile__close-button js-close-menu">
         <svg width="40px" height="40px">
           <use href="./images/icons.svg#icon-close-black"></use>
         </svg>
       </button>
-      <div class="navigation">
-        <ul class="mobile-menu list">
+      <div class="mobile__navigation">
+        <ul class="mobile__nav list">
           <li>
-            <a href="./index.html" class="nav__item link">Студія</a>
+            <a href="./index.html" class="mobile__item link current">Студія</a>
           </li>
           <li>
-            <a href="./portfolio.html" class="nav__item link">Портфоліо</a>
+            <a href="./portfolio.html" class="mobile__item link">Портфоліо</a>
           </li>
           <li>
-            <a href="#" class="nav__item link">Контакти</a>
+            <a href="#" class="mobile__item link">Контакти</a>
           </li>
         </ul>
       </div>
-      <div class="contacts"></div>
+      <div class="mobile__contacts">
+        <a href="tel:+380961111111" class="mobile__contacts-tel link"
+              >+38 096 111 11 11</a
+            >
+            <a href="mailto:info@devstudio.com" class="mobile__contacts-mail link"
+              >info@devstudio.com</a
+            >
+      </div>
+      <ul class="mobile__net list">
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item">Instagram<span class="mobile__net-line">|</span></a>
+        </li>
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item">Twitter<span class="mobile__net-line">|</span></a>
+        </li>
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item">Facebook<span class="mobile__net-line">|</span></a>
+        </li>
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item">LinkedIn<span class="mobile__net-line">|</span></a>
+        </li>
+      </ul>
+
+    </div>
     </div>
 
     <div class="backdrop is-hidden" data-modal>
