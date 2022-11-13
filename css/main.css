@@ -949,8 +949,8 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  min-height: auto;
+  width: 450px;
+  min-height: 609px;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -1115,11 +1115,17 @@ ul {
   color: var(--primary-text-color);
   font-family: "Roboto";
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1716666667;
   letter-spacing: 0.03em;
   padding-left: 36px;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .checkbox__label {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .checkbox__input {
