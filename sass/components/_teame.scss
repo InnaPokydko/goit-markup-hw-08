@@ -1,11 +1,9 @@
 .teame {
     background-color: var(--section-background-color);
   
-  
-  &__list {
+      &__list {
     width: 100%;
-    margin-bottom: 30px;
-
+   
     @media (min-width: 768px) {
       display: flex;
       gap: 30px;
@@ -14,6 +12,8 @@
   
   &__item {
     background-color: var(--primary-background-color);
+    width: 100%;
+    margin-bottom: 30px;
        
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -26,12 +26,18 @@
     margin-top: 0;
     margin-bottom: 0;
     }
+  }
   
   &__container {
-    width: 270px;
-    text-align: center;
-    padding: 30px;
-  }
+    width: 100%;
+      text-align: center;
+    padding: 30px 122px;
+
+    @media (min-width: 768px) {
+      width: 270px;
+     padding: 30px;
+       }
+   }
   
   &__name {
     color: var(--title-text-color);
