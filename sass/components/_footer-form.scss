@@ -1,15 +1,23 @@
 .form {
+  width: 100%;
     justify-content: flex-end;
     margin-left: 23px;
-  }
+      }
   
   .form__box {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-right: 0;
     margin-top: 20px;
     align-items: baseline;
-    gap: 12px;
+    gap: 20px;
+
+    @media screen and (min-width: 1200px) {
+       justify-content: flex-end;
+      flex-wrap:nowrap;
+      gap: 12px;
+          }
   }
   
   .form__input {

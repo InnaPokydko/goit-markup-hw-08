@@ -1,20 +1,30 @@
 .clients {
-    background-color: var(--primary-background-color);
-  }
+       background-color: var(--primary-background-color);
+    }
   
-  .client__logo {
-    display: flex;
-    gap: 30px;
+.clients__logo {
+  display: flex;
+  gap: 30px;
     justify-content: center;
-  }
+    flex-wrap: wrap;
+     }
   
-  .client__item {
+  .clients__item {
     list-style: none;
-    width: 170px;
+    width: calc((100% - 4 * 15px) / 2);
     height: 92px;
-  }
+
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 6 * 15px) / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap:nowrap;
+      width: 170px;
+    }
+     }
   
-  .client__link {
+  .clients__link {
     color: var(--net-color);
     display: flex;
     width: 100%;
@@ -34,9 +44,10 @@
   }
 }
 
-  .client__icon {
+.clients__link .clients__icon {
     fill: currentColor;
   }
+
   
 
   

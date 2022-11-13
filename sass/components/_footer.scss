@@ -6,8 +6,19 @@
   
   .footer__flex {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+    text-align: center;
+ 
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap:nowrap;
+      gap: 0;
+      text-align: left;
+       }
   }
   
   .footer__studio {
