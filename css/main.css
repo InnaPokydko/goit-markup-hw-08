@@ -294,7 +294,6 @@ ul {
 
 .hero {
   max-width: 1600px;
-  height: 600px;
   margin: 0 auto;
   background-color: var(--secondary-background-color);
   padding: 118px 0;
@@ -1207,7 +1206,7 @@ ul {
           flex-direction: column;
   top: 0;
   left: 0;
-  min-width: 480px;
+  width: 100%;
   min-height: 796px;
   padding: 48px 83px 48px 40px;
   background-color: var(--primary-background-color);
