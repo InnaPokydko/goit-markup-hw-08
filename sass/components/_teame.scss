@@ -6,12 +6,17 @@
    
     @media (min-width: 768px) {
       display: flex;
+      flex-wrap: wrap;
       gap: 30px;
        }
+
+       @media screen and (min-width: 1200) {
+        flex-wrap:nowrap;
+     }
   }
   
   &__item {
-    background-color: var(--primary-background-color);
+      background-color: var(--primary-background-color);
     width: 100%;
     margin-bottom: 30px;
        
@@ -21,11 +26,14 @@
     border: 1px solid transparent;
 
     @media (min-width: 1200) {
-    width: 270px;
+    width: 100%;
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
     }
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 4 * 15px) / 2);
+         }
   }
   
   &__container {

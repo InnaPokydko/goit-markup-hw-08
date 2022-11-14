@@ -2,8 +2,13 @@
         
     @media (min-width: 768px) {
       display: flex;
+      flex-wrap: wrap;
       gap: 30px;
        }
+
+       @media screen and (min-width: 1200) {
+                flex-wrap:nowrap;
+             }
   
   &__cards {
     background-color: var(--section-background-color);
@@ -12,16 +17,21 @@
     align-items: center;
         margin-bottom: 30px;
         height: 120px;
-        }
+             }
   
   &__item {
     width: 100%;
     margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+            width: calc((100% - 4 * 15px) / 2);
+         }
     
-    @media (min-width: 1200) {
+    @media screen and (min-width: 1200) {
     margin-top: 0;
     margin-bottom: 0;
-      min-width: 270px;
+    flex-wrap:nowrap;
+     
   }
 }
   
