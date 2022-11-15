@@ -406,7 +406,7 @@ ul {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .features {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -512,10 +512,7 @@ ul {
 .teame {
   background-color: var(--section-background-color);
 }
-.teame__list {
-  width: 100%;
-}
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .teame__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -525,7 +522,7 @@ ul {
     gap: 30px;
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .teame__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
