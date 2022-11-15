@@ -2,7 +2,7 @@
     background-color: var(--secondary-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
-  }
+     }
   
   .footer__flex {
     display: flex;
@@ -11,14 +11,17 @@
     flex-wrap: wrap;
     gap: 60px;
     text-align: center;
-     
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap:nowrap;
-       text-align: left;
-       gap: 0;
 
+    @media (min-width: 768px) {
+      align-items: flex-start;
+      justify-content: space-around;
+              }
+         
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
        }
   }
   

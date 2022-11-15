@@ -1,26 +1,32 @@
 .form {
       justify-content: flex-end;
-    margin-left: 23px;
+      
+    @media screen and (min-width: 768px) {
+      justify-content: center;
+      margin: 0;
       }
+    }
   
   .form__box {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
     margin-right: 0;
     margin-top: 20px;
     align-items: baseline;
     gap: 20px;
-  
+       
     @media screen and (min-width: 1200px) {
        justify-content: flex-end;
       flex-wrap:nowrap;
+      flex-direction: row;
       gap: 12px;
-          }
+      }
   }
   
   .form__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -28,6 +34,10 @@
     color: var(--net-color);
     background-color: var(--secondary-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+     }
   }
   
   .form__input:placeholder-shown {
