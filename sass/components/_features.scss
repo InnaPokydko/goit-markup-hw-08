@@ -1,11 +1,13 @@
 .features {
+  display: flex;
+        flex-direction: column;
+            justify-content: center;
+      margin: -15px;
         
     @media (min-width: 768px) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin: 0;
-       }
+      flex-direction: row;
+            flex-wrap: wrap;
+              }
 
        @media screen and (min-width: 1200px) {
                 flex-wrap:nowrap;
@@ -21,12 +23,11 @@
              }
   
   &__item {
-        margin-bottom: 30px;
+        margin: 15px;
 
     @media screen and (min-width: 768px) {
             width: calc((100% - 4 * 15px) / 2);
-            margin: 0;
-         }
+               }
     
     @media screen and (min-width: 1200) {
      flex-wrap:nowrap;

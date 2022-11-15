@@ -5,12 +5,13 @@
   
     display: flex;
       align-items: center;
-
-    @media (min-width: 1200px) {
-      gap: 0;
       justify-content: space-between;
-  }
-              
+     width: 100%;
+
+     @media (min-width: 768px) {
+      width: auto;
+  } 
+
     &__burger-menu {
       height: 40px;
     width: 40px;
