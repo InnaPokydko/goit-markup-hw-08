@@ -135,13 +135,22 @@
           <ul class="works__list list">
             <li class="works__item">
               <div class="works__box">
-                <img
-                  class="img"
-                  src="./images/1works-desk.jpg"
-                  alt="Написання програмного коду"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/1works-desk.jpg    1x,
+                      ./images/1works-desk@2x.jpg 2x
+                    "
+                    media="min-width: 1200px"
+                  />
+                  <img
+                    class="img"
+                    src="./images/1works-desk.jpg"
+                    alt="Написання програмного коду"
+                    width="370"
+                    height="294"
+                  />
+                </picture>
                 <div class="work__bg">
                   <p class="work__text">Десктопні додатки</p>
                 </div>
@@ -196,7 +205,7 @@
                   "
                 src="./images/1team-desk.jpg"
                 alt="Фото Ігора Дем'яненка"
-                sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, 450px, 100vw"
+                sizes="(min-width: 1200px) 25vw, (min-width:768px) 50vw, 450px, 100vw"
               />
               <div class="teame__container">
                 <h3 class="teame__name">Ігор Дем'яненко</h3>
@@ -247,7 +256,7 @@
                   "
                 src="./images/2team-desk.jpg"
                 alt="Фото Ольги Рєпіної"
-                sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, 450px, 100vw"
+                sizes="(min-width: 1200px) 25vw, (min-width:768px) 50vw, 450px, 100vw"
               />
               <div class="teame__container">
                 <h3 class="teame__name">Ольга Рєпіна</h3>
@@ -298,7 +307,7 @@
                   "
                 src="./images/3team-desk.jpg"
                 alt="Фото Миколи Тарасова"
-                sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, 450px, 100vw"
+                sizes="(min-width: 1200px) 25vw, (min-width:768px) 50vw, 450px, 100vw"
               />
               <div class="teame__container">
                 <h3 class="teame__name">Микола Тарасов</h3>
@@ -349,7 +358,7 @@
                   "
                 src="./images/4team-desk.jpg"
                 alt="Фото Михайла Єрмакова"
-                sizes="(min-width: 1200px) 270px, (min-width:768px) 354px, 450px, 100vw"
+                sizes="(min-width: 1200px) 25vw, (min-width:768px) 50vw, 450px, 100vw"
               />
               <div class="teame__container">
                 <h3 class="teame__name">Михайло Єрмаков</h3>
@@ -533,55 +542,51 @@
     </footer>
 
     <div class="mobile js-menu-container" id="mobile-menu">
-      
-        <button class="mobile__close-button js-close-menu">
-          <svg width="40px" height="40px">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-        
-          <ul class="mobile__nav list">
-            <li>
-              <a href="./index.html" class="mobile__item link current"
-                >Студія</a
-              >
-            </li>
-            <li>
-              <a href="./portfolio.html" class="mobile__item link">Портфоліо</a>
-            </li>
-            <li>
-              <a href="#" class="mobile__item link">Контакти</a>
-            </li>
-          </ul>
-               <div class="mobile__contacts">
-          <a href="tel:+380961111111" class="mobile__contacts-tel link"
-            >+38 096 111 11 11</a
+      <button class="mobile__close-button js-close-menu">
+        <svg width="40px" height="40px">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__nav list">
+        <li>
+          <a href="./index.html" class="mobile__item link current">Студія</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="mobile__item link">Портфоліо</a>
+        </li>
+        <li>
+          <a href="#" class="mobile__item link">Контакти</a>
+        </li>
+      </ul>
+      <div class="mobile__contacts">
+        <a href="tel:+380961111111" class="mobile__contacts-tel link"
+          >+38 096 111 11 11</a
+        >
+        <a href="mailto:info@devstudio.com" class="mobile__contacts-mail link"
+          >info@devstudio.com</a
+        >
+      </div>
+      <ul class="mobile__net list">
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item"
+            >Instagram<span class="mobile__net-line">|</span></a
           >
-          <a href="mailto:info@devstudio.com" class="mobile__contacts-mail link"
-            >info@devstudio.com</a
+        </li>
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item"
+            >Twitter<span class="mobile__net-line">|</span></a
           >
-        </div>
-        <ul class="mobile__net list">
-          <li class="mobile__net-list">
-            <a href="#" class="mobile__net-item"
-              >Instagram<span class="mobile__net-line">|</span></a
-            >
-          </li>
-          <li class="mobile__net-list">
-            <a href="#" class="mobile__net-item"
-              >Twitter<span class="mobile__net-line">|</span></a
-            >
-          </li>
-          <li class="mobile__net-list">
-            <a href="#" class="mobile__net-item"
-              >Facebook<span class="mobile__net-line">|</span></a
-            >
-          </li>
-          <li class="mobile__net-list">
-            <a href="#" class="mobile__net-item">LinkedIn</a>
-          </li>
-        </ul>
-      
+        </li>
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item"
+            >Facebook<span class="mobile__net-line">|</span></a
+          >
+        </li>
+        <li class="mobile__net-list">
+          <a href="#" class="mobile__net-item">LinkedIn</a>
+        </li>
+      </ul>
     </div>
 
     <div class="backdrop is-hidden" data-modal>
