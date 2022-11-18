@@ -8,6 +8,7 @@
     height: 100vh; 
         padding: 48px 83px 48px 40px;
     background-color: var(--primary-background-color);
+    opacity: 0;
     z-index: 3;
   
     transform: translateX(100%);
@@ -19,6 +20,7 @@
   
     &.is-open {
     transform: translateX(0);
+    opacity: 1;
   }
 
   &__close-button {
