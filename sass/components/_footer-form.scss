@@ -1,5 +1,6 @@
 .form {
       justify-content: flex-end;
+      width: 100%;
       
     @media screen and (min-width: 768px) {
       justify-content: center;
@@ -26,7 +27,7 @@
   }
   
   .form__input {
-    width: 450px;
+    
     height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -34,6 +35,10 @@
     color: var(--net-color);
     background-color: var(--secondary-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+      }
 
     @media screen and (min-width: 1200px) {
       width: 358px;
