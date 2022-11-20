@@ -319,7 +319,6 @@ ul {
 
 .hero {
   max-width: 1600px;
-  min-width: 320px;
   margin: 0 auto;
   background-color: var(--secondary-background-color);
   padding: 118px 0;
@@ -380,7 +379,11 @@ ul {
   text-transform: uppercase;
   padding: 0;
   margin: 0 auto 30px auto;
-  min-width: 360px;
+}
+@media (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 @media (min-width: 1200px) {
   .hero__title {
@@ -547,6 +550,7 @@ ul {
 }
 
 .teame {
+  width: 100%;
   background-color: var(--section-background-color);
 }
 .teame__list {
@@ -557,10 +561,10 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: -15px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: -15px;
 }
 @media screen and (min-width: 768px) {
   .teame__list {
@@ -596,7 +600,7 @@ ul {
 }
 .teame__container {
   text-align: center;
-  padding: 30px 122px;
+  padding: 30px;
 }
 @media (min-width: 768px) {
   .teame__container {
@@ -605,7 +609,6 @@ ul {
 }
 @media (min-width: 1200px) {
   .teame__container {
-    width: 270px;
     padding: 30px;
   }
 }
@@ -629,6 +632,12 @@ ul {
   display: flex;
   gap: 10px;
   margin-top: 16px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .networks__link {
@@ -898,7 +907,6 @@ ul {
 }
 
 .form__input {
-  width: 450px;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -908,7 +916,7 @@ ul {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .form__input {
     width: 450px;
   }
@@ -1095,7 +1103,7 @@ ul {
           flex-direction: column;
   top: 50%;
   left: 50%;
-  padding: 40px;
+  padding: 25px;
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1108,6 +1116,7 @@ ul {
 @media (min-width: 480px) {
   .modal {
     width: 450px;
+    padding: 40px;
   }
 }
 @media (min-width: 1200px) {
@@ -1264,8 +1273,13 @@ ul {
   font-size: 12px;
   line-height: 1.1716666667;
   letter-spacing: 0.03em;
-  padding-left: 36px;
+  padding-left: 20px;
   cursor: pointer;
+}
+@media (min-width: 450px) {
+  .checkbox__label {
+    padding-left: 36px;
+  }
 }
 @media (min-width: 768px) {
   .checkbox__label {
@@ -1284,10 +1298,10 @@ ul {
 .checkbox__icon {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 8px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 16px;
   height: 15px;
   padding: 2px;
@@ -1296,6 +1310,14 @@ ul {
   fill: none;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 450px) {
+  .checkbox__icon {
+    top: 50%;
+    left: 8px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 .checkbox__input:checked ~ .checkbox__icon {
   background-color: var(--accent-color);
@@ -1321,7 +1343,7 @@ ul {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 83px 48px 40px;
+  padding: 15px;
   background-color: var(--primary-background-color);
   opacity: 0;
   z-index: 3;
@@ -1331,6 +1353,11 @@ ul {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 768px) {
+  .mobile {
+    padding: 48px 83px 48px 40px;
+  }
 }
 @media (min-width: 768px) {
   .mobile {
@@ -1375,7 +1402,8 @@ ul {
 }
 
 .mobile__container {
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .mobile__nav {
@@ -1412,8 +1440,15 @@ ul {
 .mobile__contacts-tel {
   color: var(--accent-color);
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1717647059;
+  font-size: 24px;
+  line-height: 1.2433333333;
+}
+@media (min-width: 480px) {
+  .mobile__contacts-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.1717647059;
+  }
 }
 
 .mobile__contacts-mail {
@@ -1427,17 +1462,29 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  gap: 6px;
+}
+@media (min-width: 480px) {
+  .mobile__net {
+    gap: 10px;
+  }
 }
 
 .mobile__net-item {
   color: var(--accent-color);
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2222222222;
+  font-size: 14px;
+  line-height: 1.1428571429;
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media (min-width: 480px) {
+  .mobile__net-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2222222222;
+  }
 }
 
 .mobile__net-line {
