@@ -5,7 +5,7 @@
     @media screen and (min-width: 768px) {
       justify-content: center;
       margin: 0;
-      }
+          }
     }
   
   .form__box {
@@ -17,7 +17,8 @@
     margin-top: 20px;
     align-items: baseline;
     gap: 20px;
-       
+    width: 100%;
+             
     @media screen and (min-width: 1200px) {
        justify-content: flex-end;
       flex-wrap:nowrap;
@@ -25,6 +26,10 @@
       gap: 12px;
       }
   }
+
+  .form__label {
+        width: 100%;
+    }
   
   .form__input {
     
